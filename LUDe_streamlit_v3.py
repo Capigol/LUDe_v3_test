@@ -885,9 +885,9 @@ if uploaded_file_1 is not None:
         st.write("Decoy validation metrics:")
                 # df = duplicates_filter(lista_resultados[0])   
         st.write("Decoy validation metrics:")
-        st.write(f"{'Obtained DOE_score'}{round(DOE_score_np, 3)}{'    (best possible score = 0, worst possible score = 0.5)'}")
-        st.write(f"{'Obtained Doppelganger score':<25}{round(doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
-        st.write(f"{'Obtained Max Doppelganger score'}{round(max_doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
+        st.write(f"{'DOE_score: '}{round(DOE_score_np, 3)}{'    (best possible score = 0, worst possible score = 0.5)'}")
+        st.write(f"{'Doppelganger score: '}{round(doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
+        st.write(f"{'Max Doppelganger score: '}{round(max_doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
 
         
         st.markdown(":point_down: **Here you can dowload the generated decoys**", unsafe_allow_html=True)
@@ -923,9 +923,9 @@ else:
         DOE_score_np = doe_score(actives_desc, decoys_desc)
 
         st.write("Decoy validation metrics:")
-        st.write(f"{'Obtained DOE_score'}{round(DOE_score_np, 3)}{'    (best possible score = 0, worst possible score = 0.5)'}")
-        st.write(f"{'Obtained Doppelganger score':<25}{round(doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
-        st.write(f"{'Obtained Max Doppelganger score'}{round(max_doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
+        st.write(f"{'DOE_score'}{round(DOE_score_np, 3)}{'    (best possible score = 0, worst possible score = 0.5)'}")
+        st.write(f"{'Doppelganger score: '}{round(doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
+        st.write(f"{'Max Doppelganger score: '}{round(max_doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
 
 
         st.markdown(":point_down: **Here you can dowload the generated decoys**", unsafe_allow_html=True)
