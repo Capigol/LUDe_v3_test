@@ -2,3 +2,4 @@ streamlit
 molvs
 rdkit-pypi==2022.9.5
 openbabel-wheel
+scikit-learn
