@@ -1,4 +1,4 @@
 streamlit
 molvs
-rdkit==2024.3.6
+rdkit-pypi==2022.9.5
 openbabel-wheel
