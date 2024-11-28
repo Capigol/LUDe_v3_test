@@ -884,9 +884,11 @@ if uploaded_file_1 is not None:
 
         st.write("Decoy validation metrics:")
                 # df = duplicates_filter(lista_resultados[0])   
-        st.write(f"{'DOE_score':<25}{round(DOE_score_np, 3):<10}{'best possible score = 0, worst possible score = 0.5':<10}")
-        st.write(f"{'Doppelganger score':<25}{round(doppelganger_score, 3):<10}{'best possible score = 0, worst possible score = 1':<10}")
-        st.write(f"{'Max Doppelganger score':<25}{round(max_doppelganger_score, 3):<10}{'best possible score = 0, worst possible score = 1':<10}")
+        st.write("Decoy validation metrics:")
+        st.write(f"{'Obtained DOE_score'}{round(DOE_score_np, 3)}{'    (best possible score = 0, worst possible score = 0.5)'}")
+        st.write(f"{'Obtained Doppelganger score':<25}{round(doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
+        st.write(f"{'Obtained Max Doppelganger score'}{round(max_doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
+
         
         st.markdown(":point_down: **Here you can dowload the generated decoys**", unsafe_allow_html=True)
         st.markdown(filedownload(df_final_decoys), unsafe_allow_html=True)
@@ -920,9 +922,11 @@ else:
         decoys_desc = dataset_preparation(lista_resultados[3], 'Decoy')
         DOE_score_np = doe_score(actives_desc, decoys_desc)
 
-        
-        # df = duplicates_filter(lista_resultados[0])   
-        # st.write(f'The whole process took around {round(time.time()-time_start)} seconds')
+        st.write("Decoy validation metrics:")
+        st.write(f"{'Obtained DOE_score'}{round(DOE_score_np, 3)}{'    (best possible score = 0, worst possible score = 0.5)'}")
+        st.write(f"{'Obtained Doppelganger score':<25}{round(doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
+        st.write(f"{'Obtained Max Doppelganger score'}{round(max_doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
+
 
         st.markdown(":point_down: **Here you can dowload the generated decoys**", unsafe_allow_html=True)
         st.markdown(filedownload(df_final_decoys), unsafe_allow_html=True)
