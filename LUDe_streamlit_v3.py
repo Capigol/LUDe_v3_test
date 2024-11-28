@@ -923,7 +923,7 @@ else:
         DOE_score_np = doe_score(actives_desc, decoys_desc)
 
         st.write("Decoy validation metrics:")
-        st.write(f"{'DOE_score'}{round(DOE_score_np, 3)}{'    (best possible score = 0, worst possible score = 0.5)'}")
+        st.write(f"{'DOE_score: '}{round(DOE_score_np, 3)}{'    (best possible score = 0, worst possible score = 0.5)'}")
         st.write(f"{'Doppelganger score: '}{round(doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
         st.write(f"{'Max Doppelganger score: '}{round(max_doppelganger_score, 3)}{'    (best possible score = 0, worst possible score = 1)'}")
 
@@ -985,7 +985,7 @@ text-align: center;
 
 </style>
 <div class="footer">
-<p>Made in  🐍 and <img style='display: ; ' href="https://streamlit.io" src="https://i.imgur.com/iIOA6kU.png" target="_blank"></img> Developed with ❤️ by <a style='display: ; text-align: center' href="https://twitter.com/capigol" target="_blank">Lucas Alberca</a> for <a style='display:; text-align: center;' href="https://lideb.biol.unlp.edu.ar/" target="_blank">LIDeB</a></p>
+<p>Made in  🐍 and <img style='display: ; ' href="https://streamlit.io" src="https://i.imgur.com/iIOA6kU.png" target="_blank"></img> Developed with ❤️ by <a style='display:; text-align: center;' href="https://lideb.biol.unlp.edu.ar/" target="_blank">LIDeB</a></p>
 </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
